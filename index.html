@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анимация</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/cass2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header>
+        <div class="con">
+            <img class="touch" src="logo.png" alt="pic">
+            <div class="wrapper">
+                <div class="offer multi">
+                    <h1 class="line">
+                        С помощью нас<br />
+                        вы сможете создать то, о чем
+                    </h1>
+                    <span class="title_span"><strong>желаете!</strong></span></h1>
+                    <p class="offer_text">
+                        Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас!<br />
+                        И знаем это на 100%. Вас не остановить!
+                    </p>
+                    <a href="#" class="btn">Узнать больше...</a>
+                </div>
+                <img class="desktop animate__animated  header_img" src="../images/header-img.png" alt="pic">
+            </div>a
+        </div>
+    </header>
+    <main class="main">
+        <div class="con">
+            <h2 class="main_title desktop animate__animated animate__pulse">Что Вам необходимо?</h2>
+            <div class="main_bl">
+                <div class="bl">
+                    <img src="f3.png" alt="pic">
+                    <h3>Первый блок</h3>
+                    <p>Текст, текст, текст, текст, текст, текст</p>
+                </div>
+                <div class="bl">
+                    <img class="imagen" src="f4.png" alt="pic">
+                    <h3>Второй блок</h3>
+                    <p>Текст, текст, текст, текст, текст, текст</p>
+                </div>
+                <div class="bl">
+                    <img src="f5.png" alt="pic">
+                    <h3>Третий блок</h3>
+                    <p>Текст, текст, текст, текст, текст, текст</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мой сайт</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="order-form">
+        <div class="left-side">
+            <h2>Форма заказа продукта или услуги</h2>
+            <form action="#" method="post">
+                <label for="product">Выберите продукт или услугу:</label><br>
+                <select id="product" name="product">
+                    <option value="product1">Продукт 1</option>
+                    <option value="product2">Продукт 2</option>
+                </select><br>
+                <label for="quantity">Количество:</label><br>
+                <input type="number" id="quantity" name="quantity" required onchange="checkQuantity()">
+                <span id="quantity"></span><br>
+                <label for="comments">Дополнительные комментарии:</label><br>
+                <textarea id="comments" name="comments" rows="4" onchange="checkComment()"></textarea>
+                <span id="comments"></span> <br>
+                <button type="submit" onclick="validateProductForm(event)">Отправить заказ</button>
+            </form>
+        </div>
+        <div class="right-side" id="summaryBlock" style="display: none;">
+            <h3>Информация заказа:</h3>
+            <p id="summaryContent"></p>
+        </div>
+    </div>
+  
+  <div id="call-back-form">
+    <h2>Форма заказа обратного звонка</h2>
+    <form action="#" method="post" onsubmit="return validateCallBackForm()">
+      <label for="name">Имя:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="phone">Телефон:</label><br>
+      <input type="tel" id="phone" name="phone" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <button type="submit">Заказать звонок</button>
+    </form>
+  </div>
+  
+
+<script src="action.js"></script>
+</body>
+</html>
+    <section class="form">
+    </section>
+    <section class="end">
+        <div class="typing_text">
+            <p>© Все на этом сайте защищено</p>
+        </div>
+    </section>
+    <script>
+        const input = document.getElementById('grow');
+        const measurer = document.getElementById('text-width');
+
+        input.addEventListener('input', function () {
+            const style = window.getComputedStyle(input);
+            measurer.style.fontSize = style.fontSize;
+            measurer.style.fontFamily = style.fontFamily;
+            measurer.style.fontWeight = style.fontWeight;
+            measurer.style.letterSpacing = style.letterSpacing;
+            measurer.textContent = input.value || input.placeholder;
+            measurer.style.display = 'inline';
+            const textWidth = measurer.offsetWidth;
+            measurer.style.display = 'none';
+            input.style.width = Math.max(textWidth + 20, 150) + 'px';
+        });
+        function clearInputField() {
+            document.getElementById('sending').reset();
+        }
+    </script>
+</body>
+</html>
